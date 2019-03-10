@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>poseIns</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="demo-wrapper">
+        <div class="index-header">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="https://i.ibb.co/LCshs36/Web-Logo.png" />
+                </a>
+            </div>
+            <div class="header-letter">
+                <a href="/">
+                    <img src="https://i.ibb.co/YkLnXdb/Web-Letter.png" />
+                </a>
+            </div>
+            <div class="header-create">
+                <a href="/demo"> CREATE YOUR OWN </a>
+            </div>
+            <div class="header-about">
+                 <a href="/about"> About </a>
+            </div>
+        </div>
+        <div id="Demo_Section1">
+            <div class="demo-section1-wrapper">
+                <div class="demo-photo-list">
+                    <h1> Pick a sample photo </h1>
+                    <div class="demo-photo-row">
+                        <div class="demo-photo photo-selected" id="Photo_0">
+                            <img src="https://i.ibb.co/30zgK2H/1-beach-miami-south-beach.jpg" />
+                        </div>
+                        <div class="demo-photo" id="Photo_1">
+                            <img src="https://i.ibb.co/47hbcJb/2-rose-garden.jpg" />
+                        </div>
+                        <div class="demo-photo" id="Photo_2">
+                            <img src="https://i.ibb.co/C1LsDG7/3-green-park.jpg" />
+                        </div>
+                    </div>
+                    <div class="demo-photo-row">
+                        <div class="demo-photo" id="Photo_3">
+                            <img src="https://i.ibb.co/9sL96dj/4-city-street.jpg" />
+                        </div>
+                        <div class="demo-photo" id="Photo_4">
+                            <img src="https://i.ibb.co/HCqd9FB/5-indoor-coffee-shop.jpg" />
+                        </div>
+                        <div class="demo-photo" id="Photo_5">
+                            <img src="https://i.ibb.co/yyWPd3m/6-Ins-wall.jpg" />
+                        </div>
+                    </div>
+                    <button id="Sample_Predict"> Submit </button>
+                </div>
+            </div>
+        </div>
+        <div id="Demo_Section2">
+            <div class="demo-section2-wrapper">
+                <h1> Try your own image  </h1>
+                <div class="form-wrapper">
+                    <form class="form">
+                        <input type="text" id="input_url" placeholder="Your Image Url" />
+                        <button type="button" class="photo-form-button">Use this photo</button>
+                    </form>
+                </div>
+                <div class="input-image-wrapper">
+                    <img src="https://i.ibb.co/8YtLJCG/32.png" />
+                     <button id="Photo_Predict"> Submit </button>
+                </div>
+            </div>
+        </div>
+        <div id="Demo_Section3">
+            <div class="demo-section3-wrapper">
+            </div>
+        </div>
+    </div>
+{#    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>#}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='javascript/demo.js') }}" crossorigin="anonymous"></script>
+</body>
+</html>

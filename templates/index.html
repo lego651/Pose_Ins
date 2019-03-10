@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>poseIns</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="index-wrapper">
+        <div class="index-header">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="https://i.ibb.co/LCshs36/Web-Logo.png" />
+                </a>
+            </div>
+            <div class="header-letter">
+                <a href="/">
+                    <img src="https://i.ibb.co/YkLnXdb/Web-Letter.png" />
+                </a>
+            </div>
+            <div class="header-create">
+                <a href="/demo"> CREATE YOUR OWN </a>
+            </div>
+            <div class="header-about">
+                 <a href="/about"> About </a>
+            </div>
+        </div>
+        <div id="Index_Section1">
+            <div>
+                <h1> Turn anyone into photographer </h1>
+                <p> Make your friends take styled pictures of you instantly </p>
+                <div>
+                    <a class="section1-button" href=""> Try youw own </a>
+                     <a class="section1-button" href=""> Download App </a>
+                </div>
+            </div>
+        </div>
+        <div id="Index_Section2">
+            <div id="section2_wrapper">
+                <h1> Turn anyone into experienced photographer instantly - for free! </h1>
+                <p>We use an algorithm inspired by experienced photographers. Let it know your current beautiful scene and it inspires you how to take a nice picture of it instantly. Become an experienced photographer in just three steps. </p>
+            </div>
+        </div>
+        <div id="Index_Section3 container">
+            <div class="row" id="section3_wrapper">
+                <div class="section-left col-sm-12 col-md-6">
+                    <div class="img-wrapper">
+                        <img src="https://i.ibb.co/pymzLT1/s1.jpg" />
+                    </div>
+                </div>
+                <div class="section-right col-sm-12 col-md-6">
+                    <div class="content">
+                        <div class="title"><span> 1 </span> <h1>Upload photo</h1></div>
+                        <p>Wow, this scene is so beautiful and I would like to take a picture of my girlfriend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Index_Section4 container">
+            <div class="row" id="section4_wrapper">
+                <div class="section-left col-sm-12 col-md-6">
+                    <div class="content">
+                        <div class="title"><span> 2 </span> <h1>Get Inspired </h1></div>
+                        <p>Choose among recommended styled poses. </p>
+                    </div>
+                </div>
+                <div class="section-right col-sm-12 col-md-6">
+                     <div id="step2_choose_one" class="img-wrapper">
+                        <img src="https://i.ibb.co/jbzkmgm/Web-Step2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Index_Section5 container">
+            <div class="row" id="section5_wrapper">
+                <div class="section-left col-sm-12 col-md-6">
+                    <div class="img-wrapper" id="step3_take_own">
+                        <img src="https://i.ibb.co/drdCf4q/s3.png" />
+                    </div>
+                </div>
+                <div class="section-right col-sm-12 col-md-6">
+                    <div class="content">
+                        <div class="title"><span> 3 </span> <h1>Take your own </h1></div>
+                        <p>Use one as camera mask and take a similar photo very easily. </p>
+                    </div>
+                </div>
+                <a href="" id="section5_button"> Try it now </a>
+            </div>
+        </div>
+         <div id="Index_Section6">
+             <h1> GET SOME INSPIRATION </h1>
+             <div class="row">
+                 <div class="col-xs-12 col-sm-6 col-md-4 more-pic">
+                    <div class="more-pic-wrapper">
+                        <img src="https://i.ibb.co/YydNLDK/more-1.jpg" />
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-sm-6 col-md-4 more-pic">
+                    <div class="more-pic-wrapper">
+                        <img src="https://i.ibb.co/pRvw3y1/more-2.jpg" />
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-sm-6 col-md-4 more-pic">
+                    <div class="more-pic-wrapper">
+                        <img src="https://i.ibb.co/pLJf8Gq/more-3.jpg" />
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-sm-6 col-md-4 more-pic">
+                    <div class="more-pic-wrapper">
+                        <img src="https://i.ibb.co/4RhxYS6/more-4.jpg" />
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-sm-6 col-md-4 more-pic">
+                    <div class="more-pic-wrapper">
+                        <img src="https://i.ibb.co/b3yy7YS/more-5.jpg" />
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-sm-6 col-md-4 more-pic">
+                    <div class="more-pic-wrapper">
+                        <img src="https://i.ibb.co/7XPdgG1/more-6.jpg" />
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-sm-6 col-md-4 more-pic">
+                    <div class="more-pic-wrapper">
+                        <img src="{{ url_for('static', filename='images/ten/0.jpg') }}" />
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
